@@ -289,9 +289,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <p>Built by <strong>Aiman Nishat</strong> 
       </footer>
     </div>
   );
 }
-
