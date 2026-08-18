@@ -21,7 +21,7 @@ const getCatMeta = (name) =>
 
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-// Axios interceptor - attach token to every request
+
 axios.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) config.headers.Authorization = `Bearer ${token}`;
@@ -153,10 +153,8 @@ export default function App() {
           </form>
 
           <div className="auth-footer">
-            <p>Built by <strong>Aiman Nishat</strong> · aimannishat78692@gmail.com</p>
-            <a className="dh-btn-small" href="https://digitalheroesco.com" target="_blank" rel="noreferrer">
-              Built for Digital Heroes
-            </a>
+            
+           
           </div>
         </div>
       </div>
@@ -170,14 +168,12 @@ export default function App() {
         <div className="header-inner">
           <div>
             <h1 className="header-title">💰 Monthly Expense Tracker</h1>
-            <p className="header-sub">Aiman Nishat &nbsp;·&nbsp; aimannishat78692@gmail.com</p>
+           
           </div>
           <div className="header-right">
             <span className="welcome-text">👋 {user.name}</span>
             <button className="logout-btn" onClick={handleLogout}>Logout</button>
-            <a className="dh-btn" href="https://digitalheroesco.com" target="_blank" rel="noreferrer">
-              Built for Digital Heroes
-            </a>
+           
           </div>
         </div>
       </header>
@@ -293,7 +289,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <p>Built by <strong>Aiman Nishat</strong> · aimannishat78692@gmail.com</p>
+        <p>Built by <strong>Aiman Nishat</strong> 
       </footer>
     </div>
   );
